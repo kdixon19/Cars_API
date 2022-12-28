@@ -8,7 +8,7 @@ class Car(models.Model):
     model = models.CharField(max_length=255)
     year = models.IntegerField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    dealership = models.ForeignKey(Dealership, on_delete=models.CASCADE, null=True)
+    dealership = models.ForeignKey(Dealership, on_delete=models.CASCADE)
     
 
 
